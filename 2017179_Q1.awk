@@ -1,8 +1,10 @@
 {if ($1>$2) 
-	{for (i=$2; i<=$1; i++) 
+	i=$2
+	{while (i<=$1) 
 		{if (i % 3 == 0) 
 			{if (i % 5 != 0) 
-				{print i} 
+				{print i
+				i++} 
 			} 
 		}
 	}
